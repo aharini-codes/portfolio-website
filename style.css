@@ -1,0 +1,34 @@
+body{
+font-family: Arial;
+scroll-behavior:smooth;
+margin-top:70px;
+}
+
+.hero{
+background:linear-gradient(120deg,#1e3c72,#2a5298);
+color:white;
+padding:120px 0;
+}
+
+.profile-img{
+width:150px;
+border-radius:50%;
+margin-bottom:20px;
+}
+
+.section{
+padding:70px 0;
+}
+
+.skill-card{
+background:white;
+padding:20px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+border-radius:10px;
+font-weight:bold;
+}
+
+.project-card{
+border:none;
+box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
