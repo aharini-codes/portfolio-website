@@ -1,34 +1,86 @@
-body{
-font-family: Arial;
-scroll-behavior:smooth;
-margin-top:70px;
+/* General */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
 }
 
-.hero{
-background:linear-gradient(120deg,#1e3c72,#2a5298);
-color:white;
-padding:120px 0;
+/* Navbar spacing fix */
+body {
+    padding-top: 70px;
 }
 
-.profile-img{
-width:150px;
-border-radius:50%;
-margin-bottom:20px;
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #0d6efd, #0a58ca);
+    color: white;
 }
 
-.section{
-padding:70px 0;
+.hero h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
 }
 
-.skill-card{
-background:white;
-padding:20px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-border-radius:10px;
-font-weight:bold;
+.hero h3 {
+    margin-top: 10px;
 }
 
-.project-card{
-border:none;
-box-shadow:0 5px 15px rgba(0,0,0,0.15);
+.hero p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/* Profile Image */
+.hero img {
+    border: 4px solid white;
+    object-fit: cover;
+}
+
+/* Section spacing */
+section {
+    padding: 60px 0;
+}
+
+/* Skills */
+#skills .border {
+    background: white;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+#skills .border:hover {
+    background: #0d6efd;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Project Cards */
+.card {
+    border: none;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Buttons */
+.btn {
+    border-radius: 25px;
+}
+
+/* Contact */
+#contact a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Footer */
+footer {
+    font-size: 0.9rem;
 }
