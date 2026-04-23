@@ -1,28 +1,27 @@
-const text = ["Frontend Developer","Web Development Student"];
+// Smooth scroll for navbar links
+document.querySelectorAll('a.nav-link').forEach(link => {
+    link.addEventListener('click', function (e) {
+        if (this.hash !== "") {
+            e.preventDefault();
+            const target = document.querySelector(this.hash);
+            target.scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+    });
+});
 
-let count = 0;
+
+// Simple typing effect (optional)
+const text = "Java Full Stack Developer";
 let index = 0;
-let currentText = "";
-let letter = "";
-
-function type(){
-
-if(count === text.length){
-count = 0;
+function typingEffect() {
+    const typingElement = document.querySelector(".typing");
+    if (typingElement && index < text.length) {
+        typingElement.innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typingEffect, 80);
+    }
 }
 
-currentText = text[count];
-letter = currentText.slice(0, ++index);
-
-document.querySelector(".typing").textContent = letter;
-
-if(letter.length === currentText.length){
-count++;
-index = 0;
-}
-
-setTimeout(type,150);
-
-}
-
-type();
+typingEffect();
